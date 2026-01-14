@@ -26,12 +26,12 @@ carousels:
   }
 </style>
 
-<!-- **CRN:** 32409 / 32410  
+-- **CRN:** 32409 / 32410  
 **Credits:** 3  
-**Meeting Days/Time:** MR, 12:00–1:20 PM  
+**Meeting Days/Time:** MR, 12:30–1:50 PM  
 **Lecture Room:** JONSSON 4104  
 **Laboratory:** JEC 5312  
-**Laboratory Access:** 7:00 AM – 10:00 PM (for registered students) -->
+**Laboratory Access:** 7:00 AM – 10:00 PM (access provided to registered students) -->
 
 
 
@@ -48,12 +48,9 @@ Basic understanding of computer organization, operating systems, and networks. A
   *Office Hours:* Mondays and Thursdays after class or by appointment  
   *Email:* jaini@rpi.edu
 
-<!-- - **Teaching Assistants**  
-  - James Onyejizu — onyejj@rpi.edu  
-  - A F M Saif — saifa@rpi.edu
-
-*Office/Lab Hours:* Mon–Fri, 5–6 PM -->
-
+-- - **Teaching Assistant**  
+  - Chibuikem Ezemaduka — ezemac@rpi.edu  
+*Office/Lab Hours:* Mon–Fri, 4–5 PM -->
 
 
 ## Course Description
@@ -62,7 +59,9 @@ The course provides an in-depth study of the technologies and protocols involved
 ## Topics (Tentative)
 - Review of networking architectures and standards  
 - Review of wireless PHY layer technologies  
-- Wireless access technologies for IoT: WiFi, LTE, ZigBee, Z-Wave, BLE  
+- Wireless access technologies for IoT: WiFi, LTE, NB-IoT
+- Low-power IoT Wireless Technologies: ZigBee, Z-Wave, BLE, LoRA
+- Low-power Backscatter Technologies: RFID 
 - Routing and network layer protocols for IoT: RPL and 6LoWPAN  
 - Low-overhead IoT transport: CoAP and MQTT  
 - Network management for IoT: LWM2M and NETCONF  
@@ -83,7 +82,22 @@ No required textbooks. This is an advanced-level course, and much of the materia
 - Jack L. Burbank, Julia Andrusenko, Jared S. Everett, and William T. M. Kasch, *Wireless Networking: Understanding Internetworking Challenges*, Wiley, 2013.
 
 ## Student Learning Outcomes
-Students who finish the course satisfactorily will be able to understand, design, and evaluate:
+The table below presents the Student Learning Outcomes (SLOs) for both ECSE-4660 and ECSE-6660 students. The left column is for ECSE 4660 students, while the right column for ECSE-6660 students expands each with greater depth, advanced applications, and evaluation criteria. 
+| ECSE-4660                                        | ECSE-6660 |
+| ------------------------------------------------ | ------:|
+| 1. Understand, design, and evaluate wireless PHY layer technologies for IoT such as Modulation, LoRa, RFID, etc. | 1. Analyze and compare advanced wireless PHY layer technologies (e.g., LoRa, NB-IoT, UWB), including performance trade-offs, spectral efficiency, and deployment considerations in diverse IoT environments.|
+|2. Understand key wireless access technologies such as Aloha and CSMA used in the Internet-ofThings.| 2. Critically evaluate and simulate advanced MAC protocols (e.g., TDMA, FDMA, SDMA) for IoT, considering scalability, latency, and energy efficiency in dense and heterogeneous networks. |
+|3. Understand key routing algorithms and protocols used in the Internet-of-Things.| 3. Design and assess routing strategies (e.g., RPL, geographic routing, opportunistic routing) under constraints such as mobility, energy, and intermittent connectivity in large-scale IoT deployments. |
+|4. Understand low-overhead transport protocols that are suited for IoT applications. | 4. Evaluate and optimize lightweight transport protocols (e.g., CoAP, MQTT, QUIC) for reliability, congestion control, and interoperability in constrained IoT networks.|
+|5. Understand mobility models and mobility handling protocols for the Internet-of-Things.| 5. Model and simulate mobility patterns in IoT (e.g., vehicular, drone-based, or mobile health networks), and assess the impact on routing, latency, and data consistency. |
+|6. Understand security mechanisms used for IoT communication over wireless. | 6. Analyze and implement advanced security frameworks for IoT, including lightweight cryptographic protocols, secure bootstrapping, and intrusion detection in resource-constrained environments. |
+|7. Understand data compression and aggregation methods in sensor IoT networks. | 7. Design and evaluate adaptive data compression, in-network processing, and edge analytics techniques for scalable and energy-efficient IoT data management. |
+|8. Understand integrated IoT solutions critical in emerging domains such as vehicular networks, RFID systems, and smart buildings. | 8. Architect and critically assess end-to-end IoT systems in complex domains (e.g., smart cities, industrial IoT, cyber-physical systems), focusing on interoperability, scalability, and real-time performance. |
+
+Note that in addition, students at 6000 level will implement practical security considerations in IoT networks through advanced labs and individual projects. 
+
+
+<!-- Students who finish the course satisfactorily will be able to understand, design, and evaluate:
 1. Wireless PHY layer technologies for IoT (e.g., modulation, LoRa, RFID).  
 2. Key wireless access technologies such as Aloha and CSMA used in IoT.  
 3. Key routing algorithms and protocols used in IoT.  
@@ -91,9 +105,9 @@ Students who finish the course satisfactorily will be able to understand, design
 5. Mobility models and mobility handling protocols for IoT.  
 6. Security mechanisms for IoT communication over wireless.  
 7. Data compression and aggregation methods in sensor IoT networks.  
-8. Integrated IoT solutions in domains such as vehicular networks, RFID systems, and smart buildings.
+8. Integrated IoT solutions in domains such as vehicular networks, RFID systems, and smart buildings. 
 
-*Additional for ECSE-6660:* practical security considerations via advanced labs and individual projects.
+*Additional for ECSE-6660:* practical security considerations via advanced labs and individual projects.-->
 
 
 
@@ -107,6 +121,7 @@ Students who finish the course satisfactorily will be able to understand, design
 | Laboratory Assignments                           |    30% |
 | Final Project (implementation & demonstration)   |    40% |
 
+The grade distribution above is the same for both 4660 and 6660 students.
 *For ECSE-6660 (graduate level):* some advanced lab/homework questions and a more advanced project are required.  
 *Projects:* groups of two students are typical. 4000- and 6000-level students are discouraged from forming a single group unless approved; in such cases the 6000-level student is expected to complete advanced features independently.
 
@@ -117,19 +132,17 @@ Students who finish the course satisfactorily will be able to understand, design
 The schedule and topics are tentative and may change depending on class progress.
 
 | Lecture #    | Topic |
-|--------------|-------|
-| 1            | Intro to network architectures & standards |
-| 2–3          | PHY layer technology review |
-| 4–6          | Wireless access technologies for IoT |
-| 7–8          | Routing and network layer protocols for IoT |
-| 9–10         | Low-overhead IoT transport |
-| 11–12        | Network management for IoT |
-| 13–14        | IoT mobility models and mobility handling protocols |
-| 15–17        | Secure communication of IoT devices over wireless |
-| 18–19        | Energy-efficient IoT networking |
-| 20–22        | Sensor data aggregation and analytics |
-| 23–25        | Applications |
-| 26–28        | Final project presentations |
+|----------------|-------|
+| 1,2            | Intro to network architectures & standards |
+| 3,4,5,6        | PHY layer technology review: channel, LoRA, backscatter, OFDM foundation  |
+| 7,8,9,10       | Wireless access technologies for IoT: WiFi, BLE, LTE, Zigbee  |
+| 11,12,13, 14,15| Routing and network layer protocols for IoT: DSR, AODV, IP addressing, DHCP, ARP, IPv6, NAT, Routing, ICMP, RPL. 6LowPAN  |
+| 16,17          | Low-overhead IoT transport: UDP, TCP, Socket Programming  |
+| 18,19          | Applications for IoT: HTTP, MQTT, CoAP |
+| 20,21,22, 23   | Secure communication of IoT devices over wireless; Secure protocols, firewall |
+| 24,25          | Emerging applications   |
+| 26,27,28       | Final project presentations  |
+
 
 
 
@@ -143,8 +156,8 @@ The project provides an opportunity to immerse yourself in IoT design and applic
 ### Quizzes, Homework, and Lab Assignments
 - Per-class quizzes (Lecture 2 onward) will be assigned on **LMS** and due the same day at 11:59 PM.  
 - Homework and lab assignments will be on **Piazza**; submit solutions on **Gradescope** by the deadline. Assignments are posted roughly weekly, with homeworks and labs in alternating weeks.  
-- **Late submissions are not accepted.** With a satisfactory excuse, the grade will be assigned as the average of other homework/lab assignments (respectively).  
-- All assignments must be completed independently. Conceptual discussion with classmates/instructor is allowed, but sharing detailed solutions or final answers is not. Do not copy solutions from any source. Do not knowingly provide your work to be copied.
+- **Late submissions are not accepted, unless approved by the instructor.** There is a 20% penalty until late submission deadline on Gradescope (typically 2 days later). First two penalties will be waived. LMS grading is automatic and doesn’t allow late submissions. 
+- All assignments must be completed independently. Conceptual discussion with classmates/instructor is allowed (e.g. through Piazza), but sharing detailed solutions or final answers is not. Do not copy solutions from any source. Do not knowingly provide your work to be copied.
 
 ### Attendance / Participation
 We encourage a climate of inquiry with active student engagement. While synchronous lecture attendance is not mandatory, attending/watching lectures supports strong performance and an active learning environment.
