@@ -87,7 +87,11 @@ header:
       fr-LU   : *FR
       tr      : &TR       Arşivdekiler
       # @end locale config
-    url: /projects/
+    subfolderitems:
+      - name: "2025"
+        url: /projects/
+      - name: "2026"
+        url: /projects/2026/
 
   - titles:
       # @start locale config
@@ -113,7 +117,11 @@ header:
       fr-LU   : *FR
       tr      : &TR       Hakkında
       # @end locale config
-    url: /iot_day/
+    subfolderitems:
+      - name: "2025"
+        url: /iot_day/
+      - name: "2026"
+        url: /iot_day/2026/
 
 
   # - titles:

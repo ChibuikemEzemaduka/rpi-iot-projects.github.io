@@ -26,11 +26,21 @@ titles:
   # @end locale config
 ---
 
+{%- assign _articles = site.posts -%}
+{%- if page.project_conference -%}
+  {%- assign _articles = site.posts | where: "conference", page.project_conference -%}
+{%- endif -%}
+
 <div class="layout--archive js-all">
-  {%- include tags.html -%}
+  {%- include tags.html articles=_articles -%}
   <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.posts type='brief' show_cover=true cover_size = 'lg' show_authors=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=_articles type='brief' show_cover=true cover_size = 'lg' show_authors=true reverse=true group_by='year' -%}
   </div>
+  {%- if _articles.size == 0 and page.empty_group_year -%}
+    <div class="layout--archive__result">
+      <section><h3 class="article-list__group-header">{{ page.empty_group_year }}</h3><ul class="items"></ul></section>
+    </div>
+  {%- endif -%}
 </div>
 
 <script>

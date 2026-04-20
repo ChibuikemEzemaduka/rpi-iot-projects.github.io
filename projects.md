@@ -1,5 +1,6 @@
 ---
 layout: list
-title: projects
+title: Projects
 permalink: projects/
+project_conference: 'Spring 2025'
 ---

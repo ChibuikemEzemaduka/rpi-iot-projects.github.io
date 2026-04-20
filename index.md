@@ -221,4 +221,3 @@ We expose the vulnerability of RF communication and sensing systems (e.g., spoof
 <!-- #### Our Approach
 We embrace a holistic approach to research, combining fundamental theoretical exploration with practical implementation. We design and build prototypes to test and refine our concepts, ensuring our solutions are not only innovative but also practical and deployable in the real world. -->
 
-
