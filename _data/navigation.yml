@@ -88,9 +88,9 @@ header:
       tr      : &TR       Arşivdekiler
       # @end locale config
     subfolderitems:
-      - name: "2025 Projects"
+      - name: "2025"
         url: /projects/
-      - name: "2026 Projects"
+      - name: "2026"
         url: /projects/2026/
 
   - titles:
@@ -118,9 +118,9 @@ header:
       tr      : &TR       Hakkında
       # @end locale config
     subfolderitems:
-      - name: "2025 IOT Day"
+      - name: "2025"
         url: /iot_day/
-      - name: "2026 IOT Day"
+      - name: "2026"
         url: /iot_day/2026/
 
 

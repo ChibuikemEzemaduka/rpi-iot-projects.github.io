@@ -98,20 +98,8 @@ permalink: iot_day/2026/
   @media (max-width: 640px) { .slideshow-container { aspect-ratio: 4 / 3; } }
 </style>
 
-<div class="slideshow-container" id="iot-slideshow" aria-label="IoT Day 2025 photo slideshow">
-  {% for i in (1..29) %}
-  <div class="slide{% if forloop.first %} is-active{% endif %}" data-index="{{ forloop.index0 }}">
-    <img
-      src="/assets/images/Photos_IoT_Demo_Day/{{ i }}.jpg"
-      alt="IoT Day 2025 photo {{ i }}"
-      loading="{% if forloop.index0 > 2 %}lazy{% else %}eager{% endif %}"
-    />
-    <!-- <div class="overlay">
-      <p><a href="https://ishjain.github.io/" style="color:#fff; text-decoration:underline;">Ish Kumar Jain</a></p>
-      <p><i style="color:#e5e5e5">Course Instructor, Assistant Professor ECSE</i></p>
-    </div> -->
-  </div>
-  {% endfor %}
+<div class="slideshow-container" id="iot-slideshow" aria-label="IoT Day 2026 photo slideshow">
+  <!-- Add 2026 slideshow images here when ready. -->
 </div>
 
 <div class="slideshow-controls">
@@ -123,10 +111,19 @@ permalink: iot_day/2026/
 <script>
 (function () {
   const container = document.getElementById('iot-slideshow');
+  if (!container) return;
   const slides = Array.from(container.querySelectorAll('.slide'));
   const prevBtn = document.getElementById('prev-btn');
   const nextBtn = document.getElementById('next-btn');
   const playPauseBtn = document.getElementById('playpause-btn');
+
+  if (slides.length === 0) {
+    prevBtn.disabled = true;
+    nextBtn.disabled = true;
+    playPauseBtn.disabled = true;
+    playPauseBtn.textContent = 'Play';
+    return;
+  }
 
   let idx = 0;
   let playing = true;
@@ -179,15 +176,7 @@ permalink: iot_day/2026/
 ---
 
 ## 🏆 Best Demo – Graduate Category
-**Luggage Tracking & Anti-Tampering Device**  
-*By: Joseph Pizzimenti, Alek Krupka, and Julian Edelman*
-
-This project addressed the global issue of lost and mishandled luggage by developing an open-source AirTag-like system using Raspberry Pis with sensors. The system employs an Ad Hoc MQTT network and alerts users if their luggage is tampered with or misplaced at airports. The team's solution excelled in its technical complexity, real-world applicability, and polished presentation.
 
 ---
 
 ## 🏆 Best Demo – Undergraduate Category
-**Lab Room Management System**  
-*By: Mu Li and Yunjie Wang*
-
-Aiming to improve safety and efficiency in lab environments, this system integrates facial recognition for access control, automates equipment settings, and supports remote permission management. Notably, the project leverages a large language model to convert natural language commands into executable actions, creating a user-friendly, intelligent interface for lab resource management. The demo stood out for its innovation, automation, and forward-thinking design.
