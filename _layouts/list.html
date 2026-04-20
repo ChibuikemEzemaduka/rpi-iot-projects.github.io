@@ -26,10 +26,15 @@ titles:
   # @end locale config
 ---
 
+{%- assign _articles = site.posts -%}
+{%- if page.project_year -%}
+  {%- assign _articles = site.posts | where_exp: "post", "post.date | date: '%Y' == page.project_year" -%}
+{%- endif -%}
+
 <div class="layout--archive js-all">
-  {%- include tags.html -%}
+  {%- include tags.html articles=_articles -%}
   <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.posts type='brief' show_cover=true cover_size = 'lg' show_authors=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=_articles type='brief' show_cover=true cover_size = 'lg' show_authors=true reverse=true group_by='year' -%}
   </div>
 </div>
 
