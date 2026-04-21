@@ -68,6 +68,7 @@ permalink: iot_day/2026/
     justify-content: center;
     gap: .75rem;
     margin: .5rem 0 1rem;
+    display: none;
   }
   .control-btn {
     cursor: pointer;
@@ -98,8 +99,14 @@ permalink: iot_day/2026/
   @media (max-width: 640px) { .slideshow-container { aspect-ratio: 4 / 3; } }
 </style>
 
-<div class="slideshow-container" id="iot-slideshow" aria-label="IoT Day 2026 photo slideshow">
-  <!-- Add 2026 slideshow images here when ready. -->
+<div class="slideshow-container" aria-label="IoT Day 2026 poster">
+  <div class="slide is-active">
+    <img
+      src="/assets/images/iot_demo_day_2026.png"
+      alt="IoT Day 2026 poster"
+      loading="eager"
+    />
+  </div>
 </div>
 
 <div class="slideshow-controls">
@@ -172,6 +179,11 @@ permalink: iot_day/2026/
   });
 })();
 </script>
+
+## Demo Day Details
+**Date:** April 27, 2026 (Monday)  
+**Time:** 12:00-1:30 PM  
+**Venue:** Mercer X-Lab & Clubhouse
 
 ---
 
