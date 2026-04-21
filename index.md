@@ -26,6 +26,15 @@ carousels:
   }
 </style>
 
+> **Upcoming Event:** [IoT Day 2026](/iot_day/2026/)  
+> **Date:** April 27, 2026 (Monday)  
+> **Time:** 12:00-1:30 PM  
+> **Venue:** Mercer X-Lab & Clubhouse
+
+## Quick Links
+- **Check out student-built course projects!** [2025](/projects/) | [2026](/projects/2026/)
+- **Check out our IOT Day!** [2025](/iot_day/) | [2026](/iot_day/2026/)
+
 -- **CRN:** 32409 / 32410  
 **Credits:** 3  
 **Meeting Days/Time:** MR, 12:30–1:50 PM  
