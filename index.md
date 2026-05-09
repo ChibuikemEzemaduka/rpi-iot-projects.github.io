@@ -26,8 +26,8 @@ carousels:
   }
 </style>
 
-> **Upcoming Event:** [IoT Day 2026](/iot_day/2026/)  
-> **Date:** April 27, 2026 (Monday)  
+> **Recent Event:** [IoT Day 2026](/iot_day/2026/)  
+> **Date:** April 27, 2026  
 > **Time:** 12:00-1:30 PM  
 > **Venue:** Mercer X-Lab & Clubhouse
 
