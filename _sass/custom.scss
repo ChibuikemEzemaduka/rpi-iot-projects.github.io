@@ -89,4 +89,12 @@
   @include justify-content(center);
 }
 
+.project-link-unavailable {
+  color: #777;
+  display: inline-flex;
+  font-size: 0.82rem;
+  margin-left: 0.4rem;
+  vertical-align: middle;
+}
+
 /* end custom scss snippet */
